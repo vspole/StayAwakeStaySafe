@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vlad.stayawakestaysafeappdesign.HomeScreen"
+    style="@style/Base.TextAppearance.AppCompat.Caption">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Name"
+        android:inputType="textCapWords"
+        android:layout_above="@+id/age"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:hint="Age"
+        android:inputType="number"
+        android:layout_above="@+id/androidWear"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="Does Your Phone Have Bluetooth?"
+        android:id="@+id/androidWear"
+        android:textSize="20dp"
+        android:textColor="#4b3caf"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/welcome"
+        android:textSize="35dp"
+        android:textColor="#ffa435"
+        android:text="Welcome to Stay Awake, Stay Safe!"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/yes"
+        android:layout_alignBottom="@+id/androidWear"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCreate"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/no"
+        android:layout_below="@+id/androidWear"
+        android:layout_alignStart="@+id/yes" />
+
+
+</RelativeLayout>
